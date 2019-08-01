@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "version": "20190801",
+    "name": "Noise Gradients",
+    "default_locale": "en",
+    "description": "Colors, colors, colors. Click or tap for more. Colors. Website + domain name, 2015.",
+    "author": "Alexander Christiaan Jacob",
+    "theme_color": "#ffffff",
+    "homepage_url": "https://noisegradients.com/",
+    "start_url": "https://noisegradients.com/",
+    "icons": [
+        {
+            "src": "https://noisegradients.com/apple-touch-icon-precomposed.png"
+        }
+    ],
+    "display": "fullscreen"
+}

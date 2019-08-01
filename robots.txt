@@ -1,1 +1,1 @@
-sitemap: https://noisegradients.com/sitemap.xml
+Sitemap: https://noisegradients.com/sitemap.xml
