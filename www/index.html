@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
@@ -24,7 +24,6 @@
     <link rel="canonical" href="https://noisegradients.com/">
     <link rel="help" href="https://github.com/acjbizar/noisegradients.com">
     <link rel="manifest" href="https://noisegradients.com/manifest.json">
-    <link rel="stylesheet" href="https://mimesia.net/style/foundation-icons.css">
     <style>
         *{border:0;cursor:pointer;margin:0;overflow:hidden;outline:0;padding:0;text-decoration:none}
         canvas{display:block;height:100%;overflow:auto;-webkit-overflow-scrolling:touch}
@@ -128,7 +127,6 @@
 
         (function(global){var startY=0;var enabled=false;var handleTouchmove=function(evt){var el=evt.target;while(el!==document.body){var style=window.getComputedStyle(el);if(!style){break}var scrolling=style.getPropertyValue("-webkit-overflow-scrolling");var overflowY=style.getPropertyValue("overflow-y");var height=parseInt(style.getPropertyValue("height"),10);var isScrollable=scrolling==="touch"&&(overflowY==="auto"||overflowY==="scroll");var canScroll=el.scrollHeight>el.offsetHeight;if(isScrollable&&canScroll){var curY=evt.touches?evt.touches[0].screenY:evt.screenY;var isAtTop=startY<=curY&&el.scrollTop===0;var isAtBottom=startY>=curY&&el.scrollHeight-el.scrollTop===height;if(isAtTop||isAtBottom){evt.preventDefault()}return}el=el.parentNode}evt.preventDefault()};var handleTouchstart=function(evt){startY=evt.touches?evt.touches[0].screenY:evt.screenY};var enable=function(){window.addEventListener("touchstart",handleTouchstart,false);window.addEventListener("touchmove",handleTouchmove,false);enabled=true};var disable=function(){window.removeEventListener("touchstart",handleTouchstart,false);window.removeEventListener("touchmove",handleTouchmove,false);enabled=false};var isEnabled=function(){return enabled};var testDiv=document.createElement("div");document.documentElement.appendChild(testDiv);testDiv.style.WebkitOverflowScrolling="touch";var scrollSupport="getComputedStyle"in window&&window.getComputedStyle(testDiv)["-webkit-overflow-scrolling"]==="touch";document.documentElement.removeChild(testDiv);if(scrollSupport){enable()}var iNoBounce={enable:enable,disable:disable,isEnabled:isEnabled};if(typeof module!=="undefined"&&module.exports){module.exports=iNoBounce}if(typeof global.define==="function"){(function(define){define(function(){return iNoBounce})})(global.define)}else{global.iNoBounce=iNoBounce}})(this);
 
-
     </script>
     <script type="application/ld+json">
         {
@@ -154,6 +152,5 @@
 <body id="top">
 <noscript>Requires <i>JavaScript</i> support.</noscript>
 <canvas id="content" role="main">Requires <code>canvas</code> support.</canvas>
-<!--<div><span class=fi-shuffle></span></div>-->
 </body>
 </html>
