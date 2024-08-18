@@ -1,0 +1,19 @@
+{
+  "$schema": "https:\/\/json.schemastore.org\/web-manifest-combined.json",
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Noise Gradients",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://noisegradients.com/apple-touch-icon-precomposed.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "scope": "/",
+  "id": "https://noisegradients.com/",
+  "theme_color": "white",
+  "background_color": "black"
+}
